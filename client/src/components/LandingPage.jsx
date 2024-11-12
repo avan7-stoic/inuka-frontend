@@ -1,27 +1,83 @@
-// src/pages/LandingPage.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './LandingPage.css'; 
 
-function LandingPage() {
+const LandingPage = () => {
+  const [impactData, setImpactData] = useState({
+    totalFunds: 0,
+    totalGirlsHelped: 0,
+    totalCharities: 0,
+  });
+
+  useEffect(() => {
+    const fetchImpactData = async () => {
+      setImpactData({
+        totalFunds: 100000,
+        totalGirlsHelped: 10000,
+        totalCharities: 50,
+      });
+    };
+
+    fetchImpactData();
+  }, []);
+
   return (
     <div className="landing-page">
-      <section className="hero">
-        <h1>Support Menstrual Hygiene for Girls in Sub-Saharan Africa</h1>
-        <p>Your contribution can help provide essential supplies and support education.</p>
-        <Link to="/donor" className="cta-button">Donate Now</Link>
-      </section>
-      <section className="about">
-        <h2>About Our Mission</h2>
-        <p>We are dedicated to ensuring that all girls have access to menstrual hygiene products and clean sanitation facilities. Your donations help us keep girls in school and support their education.</p>
-      </section>
-      <section className="featured-charities">
-        <h2>Featured Charities</h2>
-        <p>Explore the charities working with us to make a difference.</p>
-        {/* Here, you can map over a list of featured charities if available */}
-        <Link to="/charities">View All Charities</Link>
-      </section>
+      <nav className="landing-nav">
+        <div className="logo">DonateForHer</div>
+        <ul className="nav-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/charities">Charities</Link></li>
+          <li><Link to="/impact">Our Impact</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+        <div className="auth-buttons">
+          <div className="sign-in-dropdown">
+            <button>Sign In</button>
+            <div className="dropdown-content">
+              <Link to="/signin/donor">As Donor</Link>
+              <Link to="/signin/admin">As Admin</Link>
+              <Link to="/signin/charity">As Charity</Link>
+            </div>
+          </div>
+          <button className="register-button"><Link to="/register">Register</Link></button>
+        </div>
+      </nav>
+
+      <div className="hero-section">
+        <img src="/path/to/background.jpg" alt="Background" className="hero-background" />
+        <div className="hero-content">
+          <h1>Empowering Girls</h1>
+          <h2>END PERIOD POVERTY</h2>
+          <p>Join us in our mission to provide menstrual hygiene products and improve sanitation facilities for school girls in Sub-Saharan Africa.</p>
+          <div className="hero-buttons">
+            <Link to="/donate" className="hero-button">Donate</Link>
+            <Link to="/learn-more" className="hero-button">Learn More</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="impact-section">
+        <h3>Our Impact</h3>
+        <div className="impact-stats">
+          <div className="stat">
+            <h4>Total Funds Raised</h4>
+            <p>${impactData.totalFunds}</p>
+          </div>
+          <div className="stat">
+            <h4>Girls Helped</h4>
+            <p>{impactData.totalGirlsHelped} girls</p>
+          </div>
+          <div className="stat">
+            <h4>Total Charities</h4>
+            <p>{impactData.totalCharities}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default LandingPage;
+
