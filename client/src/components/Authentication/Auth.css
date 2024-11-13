@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1f4;
+}
+
+.form-container {
+    position: relative;
+    max-width: 600px;
+    margin: 200px auto; /* Centering the form container */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.content {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 36px; /* Unified size */
+    margin: 0 0 30px; /* Adjusted margins for consistency */
+    font-weight: bold;
+    text-align: center;
+    color: #000000; /* Adjusted text color */
+}
+
+label {
+    display: block;
+    text-align:justify;
+    margin-left: 13%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000; /* Unified label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #cccccc;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+input[type="submit"],
+.btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none; /* For .btn class */
+}
+
+input[type="submit"]:hover,
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+p {
+    margin-top: 20px;
+    color: #000000; /* Unified paragraph text color */
+}
+
+p a {
+    color: #000000; /* Link color */
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #0d4598; /* Hover color for links */
+}
+

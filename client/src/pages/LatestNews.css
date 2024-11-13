@@ -1,0 +1,81 @@
+/* LatestNews.css */
+
+/* Styles for Latest News Section */
+.latest-news-section {
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    background-color: #f8eafa;
+}
+
+/* Styles for Latest News Title */
+.latest-news-title {
+    font-size: 1.8rem;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+/* Styles for News Cards Container */
+.news-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Styles for Individual News Card */
+.news-card {
+    background-color: #fff;
+    padding: 1rem;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styles for News Card Title */
+.news-card-title {
+    font-size: 1.2rem;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+/* Styles for News Card Date */
+.news-card-date {
+    font-size: 0.9rem;
+    color: #6a0dad;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for News Card Text */
+.news-card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for Read More Link */
+.news-read-more {
+    color: #d63384;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.landing-page{
+    /* background-color: #535bf2; */
+    margin-top: 70%;
+  }
+  
+  .hero h1{
+    /* display: flex; */
+    text-align: center;
+    /* background-color: aqua; */
+    font-size: 2.5em;
+    line-height: 1.1;
+  }
+  
+  .hero p{
+    /* display: flex; */
+    text-align: center;
+    background-color: brown;
+  }

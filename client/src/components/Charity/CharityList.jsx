@@ -1,33 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getCharityRequests } from '../../redux/slices/charitySlice';
 
 const CharityList = () => {
-  const [charities, setCharities] = useState([]);
+  const dispatch = useDispatch();
+  const requests = useSelector((state) => state.charity.requests);
 
   useEffect(() => {
-    const fetchCharities = async () => {
-      const data = [];
-      setCharities(data);
-    };
-
-    fetchCharities();
-  }, []);
+    dispatch(getCharityRequests());
+  }, [dispatch]);
 
   return (
-    <div className="charity-list">
-      <h2>Available Charities</h2>
-      <div className="charity-cards">
-        {charities.map((charity) => (
-          <div key={charity.id} className="charity-card">
-            <h3>{charity.name}</h3>
-            <p>{charity.description}</p>
-            <Link to={`/charity/${charity.id}`} className="donate-button">Donate</Link>
-          </div>
+    <div>
+      <h2>Charity List</h2>
+      <ul>
+        {requests.map((charity) => (
+          <li key={charity.id}>{charity.name}</li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
 
 export default CharityList;
-
