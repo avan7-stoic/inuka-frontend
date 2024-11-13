@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-//import './LandingPage.css'; 
+import '/src/App.css'; 
+import Footer from './Footer.jsx';
+//import CharityProfilePage from '../pages/CharityProfilePage.jsx';
+
 
 const LandingPage = () => {
   const [impactData, setImpactData] = useState({
@@ -46,7 +49,6 @@ const LandingPage = () => {
       </nav>
 
       <div className="hero-section">
-        <img src="/path/to/background.jpg" alt="Background" className="hero-background" />
         <div className="hero-content">
           <h1>Empowering Girls</h1>
           <h2>END PERIOD POVERTY</h2>
@@ -74,6 +76,8 @@ const LandingPage = () => {
             <p>{impactData.totalCharities}</p>
           </div>
         </div>
+        <Footer />
+        
       </div>
     </div>
   );
