@@ -1,8 +1,8 @@
 // src/pages/DonorDashboard.jsx
 
 import React, { useEffect, useState } from 'react';
-import DonationHistory from '../../components/Donor/DonationHistory';
-import DonationStatistics from '../../components/Donor/DonationStatistics';
+import DonationHistory from '../components/donor/DonationHistory';
+import DonationStatistics from '../components/donor/DonationStatistics';
 
 const DonorDashboard = () => {
   const [donorName, setDonorName] = useState('');
