@@ -1,7 +1,7 @@
 // src/components/donor/DonationHistory.jsx
 
 import React, { useEffect, useState } from 'react';
-import { fetchDonations } from '../../api/apiService';
+import { fetchDonations } from '../src/api/apiService';
 
 const DonationHistory = () => {
   const [donations, setDonations] = useState([]);
