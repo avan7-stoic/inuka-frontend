@@ -9,6 +9,8 @@ import LandingPage from './components/LandingPage.jsx';
 function App() {
   return (
     <BrowserRouter>  {/* Wrap your app in BrowserRouter */}
+    
+
       
       <LandingPage />
     </BrowserRouter>

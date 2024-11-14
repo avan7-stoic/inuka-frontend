@@ -126,7 +126,7 @@ body {
 }
 
 .landing-nav .register-button {
-  background-color: #7ae284; /* Light green */
+  background-color: #e27abf; /* Light green */
   border: none;
   padding: 10px 20px;
   font-size: 1.1rem;
@@ -142,7 +142,7 @@ body {
 }
 
 .landing-nav .register-button:hover {
-  background-color: #2980b9;
+  background-color: #955786;
 }
 
 /* Hero Section */
@@ -170,14 +170,14 @@ body {
 .hero-content {
   position: absolute;
   text-align: center;
-  color: white;
+  color: rgb(77, 66, 66);
   backdrop-filter: blur(5px); /* Adding a backdrop filter to enhance text readability */
   padding: 20px;
   border-radius: 5px;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
 }
 
@@ -198,7 +198,7 @@ body {
 }
 
 .hero-button {
-  background-color: #ec6083; /* Pinkish color */
+  background-color: #a23a8c; /* Pinkish color */
   color: white;
   padding: 0.8rem 2rem;
   text-decoration: none;
@@ -208,7 +208,7 @@ body {
 }
 
 .hero-button:hover {
-  background-color: #7ae284; /* Light green */
+  background-color: #e350de; /* Light green */
 }
 
 /* Impact Section */
@@ -252,7 +252,7 @@ body {
 .stat p {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #7ae284; /* Light green */
+  color: #536354; /* Light green */
 }
 
 /* Mobile Styling */
@@ -295,7 +295,7 @@ body {
 }
 
 .footer-box {
-  background-color: #f5f5dc; /* Beige-ish background for the outer box */
+  background-color: #a4a49b; /* Beige-ish background for the outer box */
   padding: 2rem; /* Padding around the footer box */
   border-radius: 8px; /* Rounded corners for the box */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */

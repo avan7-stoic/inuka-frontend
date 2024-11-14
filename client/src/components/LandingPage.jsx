@@ -27,7 +27,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <nav className="landing-nav">
-        <div className="logo">DonateForHer</div>
+        <div className="logo">Inua Wasichana</div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/charities">Charities</Link></li>
@@ -53,6 +53,8 @@ const LandingPage = () => {
           <h1>Empowering Girls</h1>
           <h2>END PERIOD POVERTY</h2>
           <p>Join us in our mission to provide menstrual hygiene products and improve sanitation facilities for school girls in Sub-Saharan Africa.</p>
+          <p>Together we are able to end period poverty and lift our school going girls and give them a bright future.</p>
+          <p>Your donation matters. However small , However huge we value all donations.</p>
           <div className="hero-buttons">
             <Link to="/donate" className="hero-button">Donate</Link>
             <Link to="/learn-more" className="hero-button">Learn More</Link>
